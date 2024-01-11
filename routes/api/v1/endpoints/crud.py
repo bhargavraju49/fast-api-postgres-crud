@@ -1,5 +1,5 @@
-from fastapi import BackgroundTasks, APIRouter, UploadFile, HTTPException, responses, Depends, FastAPI, HTTPException
-from config.postgres import SessionLocal, engine
+from fastapi import APIRouter, Depends
+from config.postgres import SessionLocal
 from models import person_table
 from sqlalchemy.orm import Session
 
